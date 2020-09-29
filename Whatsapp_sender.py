@@ -1,16 +1,26 @@
-import pyautogui, time
+"""
+This program will send a message to the most recent whatsapp message sent/ recieved chat. 
+You can change the message by changing msg variable
+"""
+import pyautogui as p, time as t
 
-pyautogui.press('win')
-pyautogui.write('whatsapp')
-pyautogui.press('enter')
+msg= "Your message goes here" #The message
+open_time = 30  #The time that whatsapp might take to open in slower systems
 
-time.sleep(10)
-time.sleep(3)
-for i in range(2):
-    pyautogui.press('tab')
+#opening whatsapp
+p.press('win')
+p.write('whatsapp')
+p.press('enter')
 
-pyautogui.press('down')
-pyautogui.press('enter')
+#Waiting to open whatsapp
+t.sleep(open_time)
+t.sleep(3)
 
-time.sleep(3)
-pyautogui.write("This is an auto generated message, *Mua ha ha* ")
+#Navigating to the recent chat
+p.press('tab')
+p.press('down')
+p.press('enter')
+p.write(msg) #Typing the message 
+p.press('enter')
+
+
