@@ -8,8 +8,8 @@ msg= "Your message goes here" #The message
 open_time = 10  #The time that whatsapp might take to open in slower systems
 
 #opening whatsapp
-p.press('win')
-p.write('whatsapp')
+p.press('win')  
+p.write('whatsapYour message goes here')
 p.press('enter')
 
 #Waiting to open whatsapp

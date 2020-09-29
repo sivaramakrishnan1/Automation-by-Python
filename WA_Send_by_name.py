@@ -6,7 +6,7 @@ import pyautogui as p, time as t
 
 
 contact=list(map(str, input("Enter a contact name: ").split()))
-msg= "Your message goes here" #The message
+msg= "hi" #The message
 open_time = 10  #The time that whatsapp might take to open in slower systems
 
 #opening whatsapp
@@ -21,5 +21,13 @@ t.sleep(3)
 #Navigating to the recent chat
 p.press('tab')
 
-t.sleep(3)
-p.write(msg) #Typing the message 
+for i in contact:
+    p.write(i)
+    p.press('enter')
+    t.sleep(3)
+    p.write(msg) #Typing the message 
+
+    p.keyDown("shift")
+    p.press('tab')
+    p.press('tab')
+
