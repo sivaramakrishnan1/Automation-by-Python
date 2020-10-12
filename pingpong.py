@@ -2,7 +2,7 @@ import turtle
 
 #Creation of screen
 win=turtle.Screen()
-win.bgcolor("black")
+win.bgpic("blue_blur.jpg")
 win.setup(width=800,height=600)
 win.tracer(0)# it stops updating our window 
 
