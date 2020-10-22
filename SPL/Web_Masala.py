@@ -1,10 +1,5 @@
 """
 THIS PROGRAM IS TO OPEN MASALA SITE IN WEB AUTOMATICALLY WHEN YOU ARE IN A RUSH... ;-)
-www - 1 sec
-xv - 3 
-vi - 3 
-llage - 1
-lol - 1
 """
 site="www.xvillage.lol"
 switch=False
