@@ -11,8 +11,7 @@ p.write('whatsapp')
 p.press('enter')
 
 #Waiting to open whatsapp
-t.sleep(open_time)
-t.sleep(10)
+t.sleep(5)
 
 #Navigating to the recent chat
 p.press('tab')
